@@ -1,0 +1,156 @@
+body {
+    font-family: 'Barlow', sans-serif;
+    margin:auto;
+}
+
+#main {
+    background-color:lavenderblush;
+    opacity:0;
+    z-index:-1;
+}
+
+/* Horizontal Lines */
+hr {
+    border: 1.5px solid rgb(150, 85, 96);
+}
+
+/* Title */
+
+#topstuff {
+    max-width:1000px;
+    display:flex;
+    flex-flow:row wrap;
+    align-items:center;
+    justify-content:center;
+}
+
+#topstuff p {
+    padding-top:2rem;
+    padding-left:2rem;
+    font-weight:bold;
+    font-family: 'Stalemate', cursive;
+    color:rgb(150, 85, 96);
+    margin:0;
+}
+
+#topstuff p:nth-child(1) {
+    font-size:60pt;
+}
+
+#topstuff p:nth-child(2) {
+    font-size:30pt;
+    transform:scale(0);
+    transition:transform 1s ease-out;
+}
+
+/* Main Content (Flex Container) */
+.flex__container {
+    display:flex;
+    flex-flow:row wrap;
+    width:100%;
+    max-width:1000px;
+}
+.flex__container .flex__box {
+    margin:2% 2% 0 2%;
+    background-color:rgb(150, 85, 96);
+}
+
+.flex__container .flex__box:nth-child(1), .flex__box:nth-child(3) {
+    flex:1;
+}
+
+.flex__container .flex__box:nth-child(2) {
+    flex:3;
+    padding:2%;
+}
+
+/* Front Image */
+#front {
+    height:100%;
+    width:100%;
+    background-image:url('images/front1.jpg');
+    background-size:100%;
+    background-repeat:no-repeat;
+    transition: background-image 0.8s ease-out;
+}
+
+/* Navigation */
+.nav {
+    display:flex;
+    flex-direction:column;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.nav__link {
+    flex:1;
+    text-align:center;
+    margin:0;
+    transition:background-color 0.3s ease-in-out;
+    padding:0 2vw;
+    line-height:600%;
+    color:white;
+}
+.nav__link:hover {
+    cursor: pointer;
+}
+
+.nav__link:hover, .nav__link[data-pos="1"] {
+    background-color:pink;
+    color:black;
+}
+
+#content {
+    opacity:0;
+    height:inherit;
+    background-color:rgba(300,300,300,0.7);
+    transition: all 0.8s ease-out;
+}
+
+#content p {
+    margin:auto;
+    padding:40% 10% 0;
+}
+
+
+/* Reponsive Controls */
+@media screen and (max-width:865px) {
+    #topstuff {
+        flex-direction:column;
+    }
+
+    #topstuff p:nth-child(1) {
+        font-size:12vw;
+        padding:0;
+    }
+
+    #topstuff p:nth-child(2) {
+        font-size:6vw;
+        padding:0;
+    }
+
+    .flex__container .flex__box:nth-child(1) {
+        margin-right:0;
+        order:1;
+    }
+
+    .flex__container .flex__box:nth-child(3) {
+        margin-left:0;
+        order:2;
+    }
+
+    .nav {
+        flex-direction:row;
+        margin:0;
+    }
+
+    .nav__link {
+        line-height:50px;
+    }
+
+    .flex__container .flex__box:nth-child(2) {
+        min-width:40vw;
+        height:90vw;
+        order:3;
+    }
+}
