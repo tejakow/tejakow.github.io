@@ -9,7 +9,7 @@ let item6 = "You patiently listen to my rants and rambles and help me work throu
 let item7 = "You have always gone above and beyond for me, and I love and admire how creative you are!";
 let item8 = "You are one of the brightest people I know! I am blessed to have received part of my brain from you.";
 let item9 = "And obviously you are sooooo beautiful! Glad to have gotten some of that from you too :)";
-let item10 = "Happy Mother's Day!<br><br>Thank you for being my mom!<br><br>I LOVE YOU!</b>";
+let item10 = "Happy Mother's Day!<br>Thank you for being you!<br>I LOVE YOU!";
 
 function welcomeFade () {
     setTimeout(function() {
