@@ -5,21 +5,18 @@ let item2 = "I always enjoy hanging out with you, no matter what we do.";
 let item3 = "...and we have the coolest memories of fun times together!";
 let item4 = "You have been there to support me during all the important times.";
 let item5 = "...and taught me how to be strong during tough times.";
-let item6 = "You patiently listen to my rants and rambles and do your best to ease my anxiety.";
+let item6 = "You patiently listen to my rants and rambles and help me work through all my silly worries.";
 let item7 = "You have always gone above and beyond for me, and I love and admire how creative you are!";
 let item8 = "You are one of the brightest people I know! I am blessed to have received part of my brain from you.";
 let item9 = "And obviously you are sooooo beautiful! Glad to have gotten some of that from you too :)";
-let item10 = "Thank you for being my mom! I LOVE YOU!!";
+let item10 = "Happy Mother's Day!<br><br>Thank you for being my mom!<br><br>I LOVE YOU!</b>";
 
 function welcomeFade () {
-    document.querySelector('#main').style.transform = 'scale(0.9)';
     setTimeout(function() {
-        document.querySelector('#main').style.transition = "all 1s ease-out";
-        document.querySelector('#main').style.opacity = "1";
-    },1);
-
-    setTimeout(function() {
-        document.querySelector('#main').style.transform = "none";
+        document.querySelector('#topstuff').style.opacity = "1";
+        document.querySelector('#flexy').style.opacity = "1";
+        document.querySelector('#topstuff').style.transform = "scale(1)";
+        document.querySelector('#flexy').style.transform = "scale(1)";
     },100);
 
     setTimeout(function() {
@@ -39,7 +36,7 @@ function changeDeck(hi, newPic, itemNo) {
     document.querySelector('#content').style.transition = "opacity 0.8s ease-out";
 
     setTimeout(function() {
-        document.querySelector('#content p').textContent = itemNo;
+        document.querySelector('#content p').innerHTML = itemNo;
     }, 999);
 
     setTimeout(function() {
