@@ -27,18 +27,18 @@ hr {
 #topstuff p {
     padding-top:2rem;
     padding-left:2rem;
-    font-weight:bold;
-    font-family: 'Stalemate', cursive;
+    font-family: 'Niconne', cursive;
     color:rgb(150, 85, 96);
     margin:0;
 }
 
 #topstuff p:nth-child(1) {
-    font-size:50pt;
+    font-size:40pt;
+    font-weight:bold;
 }
 
 #topstuff p:nth-child(2) {
-    font-size:30pt;
+    font-size:20pt;
     transform:scale(0);
     transition:transform 1s ease-out;
 }
@@ -125,12 +125,12 @@ hr {
     }
 
     #topstuff p:nth-child(1) {
-        font-size:12vw;
+        font-size:10vw;
         padding:0;
     }
 
     #topstuff p:nth-child(2) {
-        font-size:6vw;
+        font-size:5vw;
         padding:0;
     }
 
