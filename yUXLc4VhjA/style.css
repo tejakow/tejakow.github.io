@@ -28,19 +28,21 @@ body {
 
 #topstuff p {
     padding-top:2rem;
-    font-family: 'Niconne', cursive;
     margin:0;
-    color:#B36282;
+    color:#9E425E;
     text-shadow: 0 0 5px whitesmoke;
 }
 
 #topstuff p:nth-child(1) {
+    font-family: 'Niconne', cursive;
     font-size:42pt;
     padding-right:1rem;
 }
 
 #topstuff p:nth-child(2) {
-    font-size:16pt;
+    font-family: 'Dosis', sans-serif;
+    font-size:14pt;
+    font-weight:bold;
     transform:scale(0);
     transition:transform 1s ease-out;
 }
@@ -118,8 +120,8 @@ body {
 
 #content p {
     margin:auto;
-    padding:25% 10% 0;
-    font-size:24pt;
+    padding:20% 10% 0;
+    font-size:2rem;
     color:whitesmoke;
     text-shadow: 1px 1px 2px #B36282, -1px -1px 2px #FFD1DC;
 }
@@ -132,12 +134,12 @@ body {
     }
 
     #topstuff p:nth-child(1) {
-        font-size:11vw;
+        font-size:11.5vw;
         padding:0;
     }
 
     #topstuff p:nth-child(2) {
-        font-size:4vw;
+        font-size:3.5vw;
         padding:0;
     }
 
