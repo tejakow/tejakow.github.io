@@ -1,14 +1,14 @@
 window.addEventListener('load', welcomeFade, false);
 
-let item1 = "You are always so happy to see me!";
-let item2 = "You go above and beyond for me, and are very creative!";
-let item3 = "I always enjoy hanging out with you.";
-let item4 = "You are beautiful :D ";
-let item5 = "We have the coolest memories of fun times together!";
-let item6 = "";
-let item7 = "You have been there to support me through everything.";
-let item8 = "You patiently listen to my rants and rambles and know what to say.";
-let item9 = "You are one of the brightest people I know!";
+let item1 = "You are always happy to see me and give the best hugs!";
+let item2 = "I always enjoy hanging out with you, no matter what we do.";
+let item3 = "...and we have the coolest memories of fun times together!";
+let item4 = "You have been there to support me during all the important times.";
+let item5 = "...and taught me how to be strong during tough times.";
+let item6 = "You patiently listen to my rants and rambles and do your best to ease my anxiety.";
+let item7 = "You have always gone above and beyond for me, and I love and admire how creative you are!";
+let item8 = "You are one of the brightest people I know! I am blessed to have received part of my brain from you.";
+let item9 = "And obviously you are sooooo beautiful! Glad to have gotten some of that from you too :)";
 let item10 = "Thank you for being my mom! I LOVE YOU!!";
 
 function welcomeFade () {
@@ -24,11 +24,11 @@ function welcomeFade () {
 
     setTimeout(function() {
         document.querySelector('#topstuff p:nth-child(2)').style.transform = 'scale(1)';
-    },1500);
+    },1000);
 
     setTimeout(function() {
         document.querySelector('#content').style.opacity = "1";
-    },3000)
+    },2000)
 }
 
 function changeDeck(hi, newPic, itemNo) {
@@ -40,9 +40,9 @@ function changeDeck(hi, newPic, itemNo) {
 
     setTimeout(function() {
         document.querySelector('#content p').textContent = itemNo;
-    }, 1499);
+    }, 999);
 
     setTimeout(function() {
         document.getElementById('content').style.opacity = "1";
-    },1500);
+    },1000);
 }

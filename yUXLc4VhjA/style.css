@@ -34,7 +34,7 @@ hr {
 }
 
 #topstuff p:nth-child(1) {
-    font-size:60pt;
+    font-size:50pt;
 }
 
 #topstuff p:nth-child(2) {
@@ -76,7 +76,7 @@ hr {
 }
 
 .hideme {
-    visibility:hidden;
+    display:none;
 }
 
 /* Navigation */
