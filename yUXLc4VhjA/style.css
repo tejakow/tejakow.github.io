@@ -6,6 +6,8 @@ body {
 #main {
     background:url(flowers.jpeg);
     background-size:100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     z-index:-1;
 }
 

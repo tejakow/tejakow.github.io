@@ -7,7 +7,6 @@ body {
     background-size:100vw;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center; 
     z-index:-1;
 }
 

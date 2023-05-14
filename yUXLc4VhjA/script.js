@@ -22,24 +22,30 @@ function welcomeFade () {
     setTimeout(function() {
         document.querySelector('#topstuff p:nth-child(2)').style.transform = 'scale(1)';
     },1000);
-
-    setTimeout(function() {
-        document.querySelector('#content').style.opacity = "1";
-    },2000)
 }
 
 function changeDeck(hi, newPic, itemNo) {
     document.getElementById('content').style.opacity = "0";
-    document.querySelector('.nav__link[data-pos="1"]').removeAttribute('data-pos');
-    hi.setAttribute('data-pos', "1");
-    document.querySelector('#front').style.backgroundImage = "url(" + newPic + ")"
-    document.querySelector('#content').style.transition = "opacity 0.8s ease-out";
 
+    if(document.querySelector('.nav__link[data-pos="1"]') == null && hi.innerHTML == '1') {
+        document.querySelector('#content p').innerHTML = itemNo;
+        document.getElementById('content').style.opacity = "1";
+        return;
+    }
+
+    if(document.querySelector('.nav__link[data-pos="1"]') != null) {
+        document.querySelector('.nav__link[data-pos="1"]').removeAttribute('data-pos');
+    }
+    
     setTimeout(function() {
         document.querySelector('#content p').innerHTML = itemNo;
     }, 999);
-
+    
     setTimeout(function() {
         document.getElementById('content').style.opacity = "1";
-    },1000);
+    },1000);  
+
+    hi.setAttribute('data-pos', "1");
+    document.querySelector('#front').style.backgroundImage = "url(" + newPic + ")"
+    document.querySelector('#content').style.transition = "opacity 0.8s ease-out";
 }
