@@ -1,0 +1,65 @@
+body {
+    margin:auto;
+}
+
+#main {
+    background:url(beach.jpeg);
+    background-size:100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    z-index:-1;
+}
+
+/* Transitions */
+#flexy, #topstuff {
+    opacity:0;
+    transform:scale(0.9);
+    transition:all 2s ease-out;
+}
+
+/* Title */
+#topstuff {
+    width:80%;
+    padding:5% 0 0;
+    margin:30px;
+}
+
+#topstuff p:nth-child(1) {
+    font-size:5vw;
+    font-weight:bold;
+    font-family: 'Sue Ellen Francisco', cursive;
+}
+
+#topstuff p:nth-child(2) {
+    font-size:8vw;
+    transform:scale(0) translateY(-40px);
+    transition: transform 1.5s ease-out;
+    font-family: 'Lakki Reddy', cursive;
+}
+
+/* Main Content (Flex Container) */
+.container {
+    border-spacing:30px;
+}
+
+.timage, .ttext, #topstuff {
+    background-color:#ffe1a8;
+    box-shadow:0 0 16px lightgray;
+}
+
+.timage {
+    padding:1%;
+}
+
+.ttext {
+    padding:2% 5%;
+    font-size:4vw;
+    text-align: center;
+    font-family: 'Sue Ellen Francisco', cursive;
+}
+
+/* Front Image */
+#pic1, #pic2, #pic3 {
+    width:100%;
+}
